@@ -94,7 +94,6 @@ motor_power_init_t GM6020_power_init_data(0.7507578,(-0.0759636),(-0.00153397),0
 ```cpp
 //define
 motor_power_init_t motor_3508_power_data(0.65213,(-0.15659),0.00041660,0.00235415,0.20022,1.08e-7,1000);
-//init
 MotorPower m3508_1_power(motor_3508_power_data);
 MotorPower m3508_2_power(motor_3508_power_data);
 MotorPower m3508_3_power(motor_3508_power_data);
