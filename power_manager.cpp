@@ -194,7 +194,7 @@ std::vector<double> power_allocation_by_error(std::vector<double>& motor_errors_
         }
     }else {
         for (int j = 0; j < 4; ++j) {
-            const double ratio = motor_errors_vector[j] / (total_error - 4*M_PerMotor_ReservedPower);
+            const double ratio = motor_errors_vector[j] / (total_error);
             motor_power_limits_vector[j] = ratio * (total_power_limit-4 * M_PerMotor_ReservedPower) + M_PerMotor_ReservedPower;
         }
     }
